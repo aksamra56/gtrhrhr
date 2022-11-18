@@ -1,0 +1,210 @@
+body {
+    background-color: #E0E7E9;
+    font-family:"Times New Roman", Times, serif;
+    font-size: 0.8rem;
+    overflow: auto;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 20rem 40rem auto;
+  color: #444;
+}
+
+.box {
+  background-color:#A3C6C4 ;
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 150%;
+} 
+
+/*Grid layout*/
+.a {
+  grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+}
+
+.b {
+  grid-column: 1 /  1;
+  grid-row: 2 /  2;
+}
+.c
+{
+  grid-column: 2 / 2;
+  grid-row: 2 / span 3;
+}
+
+.d {
+  grid-column: 3 / 3;
+  grid-row: 2 /  span 5;
+} 
+
+.e {
+  grid-column: 1 / span 1;
+  grid-row: 3 / 5;
+}
+
+.f {
+  grid-column: 1 / 1;
+    grid-row: 5 / 5;
+}
+
+.g {
+  grid-column: 2 / 2;
+  grid-row: 5/ 7;
+}
+
+.h {
+  grid-column: 1 / 1;
+  grid-row: 6 / 6;
+}
+
+.i{
+  grid-column: 1 / 3;
+  grid-row: 2 / span 7;
+    display: none;
+}
+
+.j{
+  grid-column: 3 / 3;
+  grid-row: 2 / span 7;
+  display: none;
+}
+
+/**/
+#hoverBox{
+      background:#FFF;
+      opacity:0;
+      margin: 15px;    
+}
+
+/*hover elements*/
+.i:hover #hoverBox{
+    
+      opacity:0.6;
+      text-align:justify;
+      color:#000000;
+      font-size:20px;
+      padding:30px;
+    cursor: help;
+}
+
+.d img:hover{
+    background-color:azure;
+    cursor: pointer;
+}
+
+/*Hidden to begin with*/
+#mapData{
+    display: none;
+}
+
+#detailData{
+    display: none;
+}
+
+#cityField{
+    display: none;
+}
+
+#country{
+    display: none;
+}
+
+#city{
+    display: none;
+}
+
+
+.i img{
+        object-fit: cover;
+
+}
+
+.j section{
+    border-style: none;
+}
+
+/*All image tags*/
+img {
+   padding: 20px;
+    max-width: 100%;
+}
+
+/*all lists*/
+ul#galleryList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#countryList li {
+    margin-bottom: 0.25rem;
+    cursor: pointer;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#cityList li {
+    margin-bottom: 0.25rem;
+    cursor: pointer;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+label{
+    font-weight: bold;
+}
+
+span {
+    display: block;
+}
+
+section
+{
+    border: 3px #6C7A89   inset;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 25px;
+    object-fit: cover;
+}
+
+input {
+    border: none;
+    border: solid 1px #6C7A89  ;
+    border-radius: 5px;
+    width: 100%;
+    height: 2em;
+}
+
+.box ul {
+    list-style: none;
+    
+}
+
+/*Search fields*/
+fieldset {
+    border: 0pt
+}
+
+legend { 
+    font-weight: 700; 
+}
+
+/*Buttons*/
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+button{
+    float:right;
+}
+
